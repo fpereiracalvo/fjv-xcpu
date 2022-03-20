@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Z80Compiler": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}

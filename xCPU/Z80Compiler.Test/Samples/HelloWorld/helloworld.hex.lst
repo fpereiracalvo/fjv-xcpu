@@ -1,0 +1,48 @@
+      call main
+0000: CD 30 00
+
+      defm "hello world!."
+0010: 68 65 6C 6C 6F 20 77 6F 72 6C 64 21 2E
+
+      ld a, 0x01       ;clear
+0030: 3E 01
+
+      out (lcd_control_A), a
+0032: D3 00
+
+      ld a, 0x0f       ;on
+0034: 3E 0F
+
+      out (lcd_control_A), a
+0036: D3 00
+
+      ld hl, label1
+0038: 21 10 00
+
+      jp compare
+003B: C3 3F 00
+
+      inc hl
+003E: 23
+
+      ld a, 0x2e          ; dot "."
+003F: 3E 2E
+
+      cp (hl)             ; compare hl == a.
+0041: BE
+
+      jp z, main
+0042: CA 30 00
+
+      ld b, (hl)
+0045: 46
+
+      ld a, b'
+0046: 78
+
+      out (lcd_write_A), a
+0047: D3 08
+
+      jp next
+0049: C3 3E 00
+

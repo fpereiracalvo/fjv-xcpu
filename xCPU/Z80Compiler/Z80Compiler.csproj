@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Z80Assembly\Z80Assembly.csproj" />
+    <ProjectReference Include="..\Z80\Z80.csproj" />
+    <ProjectReference Include="..\HexFile\Fjv.xCPU.HexFile.csproj" />
+    <ProjectReference Include="..\CodeCompiler\Fjv.xCPU.CodeCompiler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fjv.Modules" />
+    <None Remove="Modules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fjv.Modules" Version="1.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
+</Project>

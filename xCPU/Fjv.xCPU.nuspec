@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Fjv.xCPU</id>
+        <version>0.1.0</version>
+        <description>Fjv.xCPU is an experimental Assembly compiler library that provides architecture and methods to customize your own cpu compiler.</description>
+        <authors>Francisco Pereira Calvo</authors>
+        <projectUrl>https://github.com/fpereiracalvo/fjv-xcpu</projectUrl>
+        <license type="expression">MIT</license>
+        <readme>docs\readme.md</readme>
+
+        <dependencies>
+          <group targetFramework=".NETStandard2.1">
+          </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\licenses\LICENSE.txt" target="" />
+        <file src="..\README.md" target="docs\" />
+        <file src="CodeCompiler/bin/Release/netstandard2.1\Fjv.xCPU.CodeCompiler.dll" target="lib\netstandard2.1" />
+        <file src="CodeProvider/bin/Release/netstandard2.1\Fjv.xCPU.CodeProvider.dll" target="lib\netstandard2.1" />
+        <file src="HexFile/bin/Release/netstandard2.1\Fjv.xCPU.HexFile.dll" target="lib\netstandard2.1" />
+    </files>
+</package>
