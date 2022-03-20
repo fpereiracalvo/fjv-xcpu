@@ -240,16 +240,17 @@ Compile is a process to transform strings code to machine code. In other words, 
 If you like get bytes from a cpu instruction, you must invoke the GetInstruction passing the the line of code as a parameter.
 
 ```csharp
+//initialize provider.
 IProvider<CpuInstructionType, byte> cpuCodeProvider = new Fjv.Z80.Provider();
-IInstructionResolverProvider<byte> _cpuCodeResolver = cpuCodeProvider.GetInstructionResolverProvider();
+IInstructionResolverProvider<byte> cpuCodeResolver = cpuCodeProvider.GetInstructionResolverProvider();
 
 //remember the z80 LD instruction defined.
 var line = "ld a, 0x01";
-var instruction = _cpuCodeResolver.GetInstruction(line);
+var instruction = cpuCodeResolver.GetInstruction(line);
 ```
 
 *SinglePassCompiler* has an implementations that automatize this process to use with source files. Obviously you can create your own compiler.
 
-You can see more on samples proyects prepared to you.
+You can see more on samples projects prepared to you on https://github.com/fpereiracalvo/fjv-xcpu.
 
 Enjoy!
