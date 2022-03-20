@@ -3,7 +3,7 @@
     <metadata>
         <id>Fjv.xCPU</id>
         <version>0.1.0</version>
-        <description>Fjv.xCPU is an experimental Assembly compiler library that provides architecture and methods to customize your own cpu compiler.</description>
+        <description>Fjv.xCPU is an experimental Assembly compiler library that provides architecture and methods to customize your own CPU compiler.</description>
         <authors>Francisco Pereira Calvo</authors>
         <projectUrl>https://github.com/fpereiracalvo/fjv-xcpu</projectUrl>
         <license type="expression">MIT</license>

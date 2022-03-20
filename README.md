@@ -132,7 +132,7 @@ You must passing a type of value to Object property for each DataType:
 
 The other enum is Internal, but it is not implemeted yet inside the SinglePassCompiler.
 
-The next sample shows how pattern by ** RegexPattern** to recognize special strings on the command. In this case take another source file from folder or a remote resource to compile and put it inside your program.
+The next sample shows how pattern by **RegexPattern** to recognize special strings on the command. In this case take another source file from folder or a remote resource to compile and put it inside your program.
 
 ```csharp
 //ext "<external or remote file>"
@@ -197,7 +197,7 @@ You can see more about this inside Z80Assembly sample project.
 
 ## SinglePassCompiler
 
-The **SinglePassCompiler** is a class that define a sealed single pass compiler. It is an implementation about a compiler that only passing once time throught the source code. All the labels are saved or resolved on the way.
+The **SinglePassCompiler** is a class that define a sealed single pass compiler. It is an implementation about a compiler that only passing once time throughout source code. All the labels are saved or resolved on the way.
 
 The constructor require two parameters:
 * IInstructionResolverProvider\<byte\>, for cpu instruction set.
@@ -251,6 +251,6 @@ var instruction = cpuCodeResolver.GetInstruction(line);
 
 *SinglePassCompiler* has an implementations that automatize this process to use with source files. Obviously you can create your own compiler.
 
-You can see more on samples projects prepared to you on https://github.com/fpereiracalvo/fjv-xcpu.
+You can see more on sample projects prepared to you on https://github.com/fpereiracalvo/fjv-xcpu.
 
 Enjoy!
