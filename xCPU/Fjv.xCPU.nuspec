@@ -7,7 +7,7 @@
         <authors>Francisco Pereira Calvo</authors>
         <projectUrl>https://github.com/fpereiracalvo/fjv-xcpu</projectUrl>
         <license type="expression">MIT</license>
-        <readme>docs\readme.md</readme>
+        <readme>docs\README.md</readme>
 
         <dependencies>
           <group targetFramework=".NETStandard2.1">
